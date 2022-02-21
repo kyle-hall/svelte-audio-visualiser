@@ -15,9 +15,8 @@
 
     const track = audioContext.createMediaElementSource(audioElement)
 
-    track
-      .connect(analyserNode)
-      .connect(audioContext.destination)
+    track.connect(analyserNode)
+    analyserNode.connect(audioContext.destination)
 
     // I don't think this is doing anything because there's no data from the track
     // and it's not waiting to receive it before filling the array
@@ -42,7 +41,7 @@
       canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
       canvasCtx.lineWidth = 2;
-      canvasCtx.strokeStyle = "rgb(0, 0, 0)";
+      canvasCtx.strokeStyle = "rgb(256, 0, 0)";
 
       canvasCtx.beginPath();
 
@@ -67,7 +66,7 @@
       canvasCtx.stroke();
     }
 
-
+    draw();
   });
 
 </script>
@@ -75,12 +74,21 @@
 <div bind:this={root} class="visualiser-container">
   <div class="visualiser">
     <h2>Visualiser</h2>
-    <audio>
+    <canvas id="oscilloscope"></canvas>
+    <audio controls>
       <source src="whereTheWavesTakeUs.mp3" type="audio/mpeg">
     </audio>
-    <canvas id="oscilloscope"></canvas>
   </div>
   <div class="controls">
     <h2>Controls</h2>
   </div>
 </div>
+
+<style>
+  .visualiser {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 30rem;
+  }
+</style>
