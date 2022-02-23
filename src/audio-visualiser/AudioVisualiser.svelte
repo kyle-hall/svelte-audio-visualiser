@@ -78,11 +78,16 @@
 </div>
 
 <style>
-  .visualiser {
+  .visualiser-container {
     display: grid;
     place-content: center;
 
     height: 100vh;
     width: 100vw;
+  }
+
+  .visualiser {
+    display: flex;
+    flex-direction: column;
   }
 </style>
