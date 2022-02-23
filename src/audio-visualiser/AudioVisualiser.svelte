@@ -79,9 +79,6 @@
       <source src="whereTheWavesTakeUs.mp3" type="audio/mpeg">
     </audio>
   </div>
-  <div class="controls">
-    <h2>Controls</h2>
-  </div>
 </div>
 
 <style>
