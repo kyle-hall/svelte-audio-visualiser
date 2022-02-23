@@ -83,9 +83,10 @@
 
 <style>
   .visualiser {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-content: center;
 
-    max-width: 30rem;
+    height: 100vh;
+    width: 100vw;
   }
 </style>
