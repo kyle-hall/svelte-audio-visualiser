@@ -53,6 +53,8 @@ You can run the newly built app with `npm run start`. This uses [sirv](https://g
 This project uses a music track created with a Creative Commons license.
 
 Where The Waves Take Us by Purrple Cat | [https://purrplecat.com/](https://purrplecat.com/)
+
 Music promoted by [https://www.chosic.com/free-music/all/](https://www.chosic.com/free-music/all/)
+
 Creative Commons CC BY-SA 3.0
 [https://creativecommons.org/licenses/by-sa/3.0/](https://creativecommons.org/licenses/by-sa/3.0/)
