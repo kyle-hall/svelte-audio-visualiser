@@ -30,9 +30,6 @@
     // draw an oscilloscope of the current audio source
 
     function draw() {
-
-      console.log('calling draw')
-
       requestAnimationFrame(draw);
 
       analyserNode.getByteTimeDomainData(dataArray);
@@ -49,7 +46,6 @@
       var x = 0;
 
       for (var i = 0; i < bufferLength; i++) {
-        console.log('drawing a thing')
         var v = dataArray[i] / 128.0;
         var y = v * canvas.height / 2;
 
